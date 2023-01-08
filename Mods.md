@@ -112,7 +112,7 @@ Column Variant Example:
 activateModMap("aconfusion", 4, 2, "outCubic", 180, 0) -- reminder that 0 is 1 since the column numbers are 0 index based. 0, 1, 2, 3 for the 4 column numbers.
 ```
 
-[wave](_media/confusion.mp4 ':include :type=video controls width=35% muted=true autoplay=true loop=true')
+[aconfusion](_media/confusion.mp4 ':include :type=video controls width=35% muted=true autoplay=true loop=true')
 
 ## reverse
 
