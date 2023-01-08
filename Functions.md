@@ -215,13 +215,37 @@ setSpriteOffset("car", 100, 100)
 
 ### Properties
 
-| Property | Type | Description |
-| --- | --- |----------- |
-
+| Property | Description |
+| --- |----------- |
+| sparrow | A path to load a sparrow atlas (relative to mod directory, without extension) |
+| loop | True or False to loop the sparrow animation |
+| fps | The FPS to run the sparrow animation at |
+| rageMin | The minimum frame to play |
+| rageMax | The maximum frame to play |
+| anim | The current sparrow animation to play |
+| animFinish | A function's name to call when the sprite has finished its sparrow animation |
+| anchor | A sprite's name to anchor to (meaning the current sprite gets anchored to the specified sprite) |
 
 This function returns nothing.
 
+Sparrow File loading example:
 
+```lua
+-- Loading a FNF spritesheet (yeah I know fnf crazy but its a good tutorial okay)
+createSprite("BOYFRIEND", "bf",0,0)
+setSpriteProperty("bf", "sparrow", "BOYFRIEND")
+setSpriteProperty("bf", "loop", "true") -- it loops!
+setSpriteProperty("bf", "fps", "24")
+setSpriteProperty("bf", "animFinish", "finishBF") -- this doesn't get called on a loops end
+
+setSpriteProperty("bf", "anim", "BF idle dance") -- this plays the idle!!
+
+-- The current file structure looks like this:
+-- └──  mod
+--      ├── BOYFRIEND.png
+--      ├── BOYFRIEND.xml
+--      └── mod.lua
+```
 
 ## createShader
 
