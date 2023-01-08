@@ -205,6 +205,24 @@ Example:
 setSpriteOffset("car", 100, 100)
 ```
 
+## setSpriteProperty
+
+| Argument | Type | Description |
+| --- | --- |----------- |
+| sprite | string | The name of the sprite |
+| property | string | The property to set |
+| value | string | The value to set the property to |
+
+### Properties
+
+| Property | Type | Description |
+| --- | --- |----------- |
+
+
+This function returns nothing.
+
+
+
 ## createShader
 
 | Argument | Type | Description |
