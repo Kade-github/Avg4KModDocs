@@ -41,7 +41,7 @@ end
 | --- | --- |----------- |
 | lane | int | The lane of the hit note |
 
-A function that gets called whenever the play successfully hits a note.
+A function that gets called whenever the player successfully hits a note.
 
 
 Example:
