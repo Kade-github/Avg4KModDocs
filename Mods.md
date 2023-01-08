@@ -113,3 +113,116 @@ activateModMap("aconfusion", 4, 2, "outCubic", 180, 0) -- reminder that 0 is 1 s
 ```
 
 [wave](_media/confusion.mp4 ':include :type=video controls width=35% muted=true autoplay=true loop=true')
+
+## reverse
+
+Reverse the scrollspeed and flip the receptors.
+
+Example:
+```lua
+-- Smoothly interperlates reverse to 100% in the first column (1) on the 4th beat, over a span of 2 beats.
+activateModMap("reverse", 4, 2, "outCubic", 1, 0)
+```
+
+[reverse](_media/reverse.mp4 ':include :type=video controls width=35% muted=true autoplay=true loop=true')
+
+## dizzy/dizzyCol
+
+Rotate the notes and receptors based on the current beat.
+
+Example:
+```lua
+-- Smoothly interperlates dizzy to 100% (1) on the 4th beat, over a span of 2 beats.
+activateMod("dizzy", 4, 2, "outCubic", 1, 0)
+```
+
+Column Variant Example:
+```lua
+-- Smoothly interperlates dizzy to 100% (1) in the first column on the 4th beat, over a span of 2 beats.
+activateMod("dizzyCol", 4, 2, "outCubic", 1, 0)
+```
+
+[dizzy](_media/dizzy.mp4 ':include :type=video controls width=35% muted=true autoplay=true loop=true')
+
+## mini/miniCol
+
+Sizes up and down the current playfield (.5 = default, 1 = 50% size, 0 = 150% size)
+
+Example:
+```lua
+-- Smoothly interperlates mini to 100% (1) on the 4th beat, over a span of 2 beats.
+activateMod("mini", 4, 2, "outCubic", 1, 0)
+```
+
+Column Variant Example:
+```lua
+-- Smoothly interperlates mini to 100% (1) in the first column on the 4th beat, over a span of 2 beats.
+activateMod("miniCol", 4, 2, "outCubic", 1, 0)
+```
+(the video says 0 = double, its lying)
+
+[mini](_media/mini.mp4 ':include :type=video controls width=35% muted=true autoplay=true loop=true')
+
+## stealthWhite
+
+Changes the colors of the notes and receptors to white
+
+Column Variant Example:
+```lua
+-- Smoothly interperlates stealthWhite to 100% (1) in the first column on the 4th beat, over a span of 2 beats.
+activateMod("stealthWhite", 4, 2, "outCubic", 1, 0)
+```
+
+[stealthWhite](_media/stealthWhite.mp4 ':include :type=video controls width=35% muted=true autoplay=true loop=true')
+
+## stealthOpacity/stealthOpacityReceptors
+
+Changes the opacity of the notes and receptors
+
+Column Variant Note Example:
+```lua
+-- Smoothly interperlates stealthOpacity to 100% (1) in the first column on the 4th beat, over a span of 2 beats.
+activateMod("stealthOpacity", 4, 2, "outCubic", 1, 0)
+```
+
+Column Variant Receptor Example:
+```lua
+-- Smoothly interperlates stealthOpacity to 100% (1) in the first column on the 4th beat, over a span of 2 beats.
+activateMod("stealthOpacityReceptors", 4, 2, "outCubic", 1, 0)
+```
+
+[stealthOpacity](_media/stealthOpacity.mp4 ':include :type=video controls width=35% muted=true autoplay=true loop=true')
+
+## Sprite Path
+
+Currently sprite paths (splines) are pretty buggy, and they will be fixed in the future.
+
+#### pathAlpha
+
+Changes the opacity of the sprite path
+
+Example:
+```lua
+-- Sets the Sprite Path's alpha to 1 on the start of the song
+activateMod("pathAlpha", 0, 0, "outCubic", 1)
+```
+
+#### pathDensity
+
+Changes the density of the sprite path
+
+Example:
+```lua
+-- Sets the Sprite Path's density to 1 on the start of the song
+activateMod("pathDensity", 0, 0, "outCubic", 1)
+```
+
+## Splines
+
+The sprite path is the visual part of splines (and yes splines are also buggy), but they are less buggy.
+
+Here is an in depth tutorial on them:
+
+[splineTutorial](_media/splineTutorial.mp4 ':include :type=video controls width=35%')
+
+This video is taken from the main tutorial [here](https://www.youtube.com/watch?v=5EfC9jMnxh0&feature=youtu.be).
