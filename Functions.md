@@ -252,8 +252,8 @@ setSpriteProperty("bf", "anim", "BF idle dance") -- this plays the idle!!
 | Argument | Type | Description |
 | --- | --- |----------- |
 | shader | string | The name of the shader |
-| vertPath | string | The vert path of the shader (relative to the mod directory) |
-| fragPath | string | The frag path of the shader (relative to the mod directory) |
+| vertPath | string | The vert path of the shader (relative to the mod directory, without the extension) |
+| fragPath | string | The frag path of the shader (relative to the mod directory, without the extension) |
 
 This function returns nothing.
 
@@ -278,4 +278,42 @@ Example:
 ```lua
 -- Applys "blur" to the sprite "car"
 applyShader("blur", "car")
+```
+
+## setNoteskin
+
+| Argument | Type | Description |
+| --- | --- |----------- |
+| noteskin | string | The name of the noteskin folder in the mod directory (the folder should be something you can put into avg4k's noteskin folder) |
+
+This function returns nothing.
+
+Example:
+
+```lua
+-- Set the noteskin to "noteskin"
+setNoteskin("noteskin")
+```
+
+## dom
+
+Standing for "do-mod", it's a simple "do this function at this beat"
+
+| Argument | Type | Description |
+| --- | --- |----------- |
+| function | luaFunction | The function to call |
+| beat | float | The beat to call the function at |
+
+This function returns nothing.
+
+Example:
+
+```lua
+-- print "Hello World" at the 1st beat
+function create()
+    dom(function()
+            consolePrint("Hello World!")
+        end
+        , 1)
+end
 ```
