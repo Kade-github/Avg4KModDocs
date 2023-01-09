@@ -364,6 +364,50 @@ function create()
 end
 ```
 
+## setSpriteMod
+
+This function will set a sprites mod's property without tweens or a time attached.
+
+| Argument | Type | Description |
+| --- | --- |----------- |
+| sprite | string | The sprite to set |
+| mod | string | The mod to set |
+| amount | float | The mod's main value |
+
+This function returns nothing.
+
+Example:
+
+```lua
+-- Instantly set "movex" to -250
+function create()
+    setSpriteMod('car', 'movex', -250)
+end
+```
+
+## getSpriteMod
+
+This function will get a sprites mod's property.
+
+| Argument | Type | Description |
+| --- | --- |----------- |
+| sprite | string | The sprite to set |
+| mod | string | The mod to set |
+
+| Return | Type | Description |
+| --- | --- |----------- |
+| amount | float | The current value of the mod |
+
+Example:
+
+```lua
+-- Instantly set "movex" to -250, and print the value to the console
+function create()
+    setSpriteMod('car', 'movex', -250)
+    consolePrint(tostring(getSpriteMod('car', 'movex')))
+end
+```
+
 ## setAutoEnd
 
 This function tells the game if it should the song prematurely, or once the song is finished.
