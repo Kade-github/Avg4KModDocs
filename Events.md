@@ -2,7 +2,7 @@
 
 There are no arguments in this event.
 
-The first function that gets called when the game loads the modfile.
+The first event that gets called when the game loads the modfile.
 
 Example:
 
@@ -21,7 +21,7 @@ end
 | --- | --- |----------- |
 | beat | float | The current beat of the song |
 
-A function that gets called every so often, **not every frame**; But pretty close.
+A event that gets called every so often, **not every frame**; But pretty close.
 
 
 Example:
@@ -41,7 +41,7 @@ end
 | --- | --- |----------- |
 | lane | int | The lane of the hit note |
 
-A function that gets called whenever the player successfully hits a note.
+A event that gets called whenever the player successfully hits a note.
 
 
 Example:
@@ -61,7 +61,7 @@ end
 | --- | --- |----------- |
 | key | int | The key code of the key pressed |
 
-A function for when a key is pressed.
+A event for when a key is pressed.
 
 [Link](https://wiki.libsdl.org/SDL2/SDLKeycodeLookup) to a page with the keycodes.
 
@@ -84,7 +84,7 @@ end
 | --- | --- |----------- |
 | key | int | The key code of the key released |
 
-A function for when a key is released.
+A event for when a key is released.
 
 [Link](https://wiki.libsdl.org/SDL2/SDLKeycodeLookup) to a page with the keycodes.
 
@@ -100,3 +100,11 @@ function key_released(key)
     end
 end
 ```
+
+## editor_scroll
+
+This event has no arguments.
+
+A event for when the editor is scrolled through (Mod Viewer)
+
+Good for creating ModAPI's/Templates

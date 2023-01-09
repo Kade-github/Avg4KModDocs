@@ -317,3 +317,70 @@ function create()
         , 1)
 end
 ```
+
+## setModProperty
+
+This function will set a mod's property without tweens or a time attached.
+
+| Argument | Type | Description |
+| --- | --- |----------- |
+| mod | string | The mod to set |
+| pid | int | The playfield the mod is on |
+| column | int | The column the mod is on (if applicable, otherwise set to -1) |
+| amount | float | The mod's main value |
+
+This function returns nothing.
+
+Example:
+
+```lua
+-- Instantly set "amovex" to -250
+function create()
+    setModProperty('amovex', 0, -1, -250)
+end
+```
+
+## getModProperty
+
+This function will get a mod's value.
+
+| Argument | Type | Description |
+| --- | --- |----------- |
+| mod | string | The mod to set |
+| pid | int | The playfield the mod is on |
+| column | int | The column the mod is on (if applicable, otherwise set to -1) |
+
+| Return | Type | Description |
+| --- | --- |----------- |
+| amount | float | The current value of the mod |
+
+Example:
+
+```lua
+-- Instantly set "amovex" to -250 and print out the value
+function create()
+    setModProperty('amovex', 0, -1, -250)
+    consolePrint(tostring(getModProperty('amovex',0,-1)))
+end
+```
+
+## setAutoEnd
+
+This function tells the game if it should the song prematurely, or once the song is finished.
+
+Setting this to **"true"** will not end the song until it is set to **false**.
+
+| Argument | Type | Description |
+| --- | --- |----------- |
+| autoEnd | bool | If the game should auto end the song or not |
+
+This function returns nothing.
+
+Example:
+
+```lua
+-- Stop the chart from ending
+function create()
+    setAutoEnd(true)
+end
+```
