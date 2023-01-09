@@ -440,3 +440,18 @@ A very simple helper function that simply combines a relative path and creates a
 | Return | Type | Description |
 | --- | --- |----------- |
 | absolute path | string | An absolute version of that path |
+
+## tween
+
+A simple tween function
+
+| Argument | Type | Description |
+| --- | --- |----------- |
+| a | float | The start point |
+| b | float | The end point |
+| t | float | The time along the point |
+| tween | string | The easing to use, list located [here](Easing.md) |
+
+| Return | Type | Description |
+| --- | --- |----------- |
+| value | float | The return value of lerp |
