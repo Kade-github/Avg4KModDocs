@@ -428,3 +428,15 @@ function create()
     setAutoEnd(true)
 end
 ```
+
+## formCompletePath
+
+A very simple helper function that simply combines a relative path and creates an absolute one.
+
+| Argument | Type | Description |
+| --- | --- |----------- |
+| path | string | A relative path in the mod/ folder |
+
+| Return | Type | Description |
+| --- | --- |----------- |
+| absolute path | string | An absolute version of that path |
