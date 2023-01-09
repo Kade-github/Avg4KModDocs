@@ -197,7 +197,7 @@ activateMod("stealthOpacityReceptors", 4, 2, "outCubic", 1, 0)
 
 Currently sprite paths (splines) are pretty buggy, and they will be fixed in the future.
 
-#### pathAlpha
+### pathAlpha
 
 Changes the opacity of the sprite path
 
@@ -207,7 +207,7 @@ Example:
 activateMod("pathAlpha", 0, 0, "outCubic", 1)
 ```
 
-#### pathDensity
+### pathDensity
 
 Changes the density of the sprite path
 
