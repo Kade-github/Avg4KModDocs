@@ -1,4 +1,4 @@
-## Coming soon!
-> Lua API files that contain helper functions to make creating modfiles eaiser! Created by the community and the main developer.
+## ModFrame
+> Created by Kade, it is a api designed to make modfiles eaiser to write.
 
-Currently there is only the base game api, but in the future I will be making a lua file that would make a lot of things way eaiser!
+Check it out [here](https://github.com/KadeDev/Avg4k-ModFrame)
