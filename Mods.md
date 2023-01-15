@@ -205,31 +205,4 @@ The sprite path is the visual part of splines, so splines simply tell the arrows
 
 ### Spline Functions
 
-#### setSpline
-Sets a spline's movex and movey values (and a "beatsAway" value saying how far away the notes will hit the point)
-
-| Argument | Type | Description |
-| --- | --- |----------- |
-| column | int | The column of the spline |
-| beatsAway | double | How many beats away from the receptors should the spline end at |
-| movex | int | The amount to offset from the receptors on the x axis |
-| movey | int | The amount to offset from the receptors on the y axis |
-
-This function returns nothing
-
-#### removeSpline
-Removes a spline based on the provided beatsAway
-
-| Argument | Type | Description |
-| --- | --- |----------- |
-| column | int | The column of the spline |
-| beatsAway | double | The identifier for the spline to be removed |
-
-This function returns nothing
-
-#### resetSplines
-Resets all splines to {movex:0,movey:0, beatsAway:0} and removes all custom ones.
-
-This function has no arguments
-
-This function returns nothing
+tbd
