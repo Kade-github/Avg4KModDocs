@@ -201,7 +201,7 @@ Currently sprite paths (splines) are pretty buggy, and they will be fixed in the
 
 ## Splines
 
-The sprite path is the visual part of splines (and yes splines are also buggy), but they are less buggy.
+The sprite path is the visual part of splines, so splines simply tell the arrows where to go at a specific time.
 
 ### Spline Functions
 
