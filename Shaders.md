@@ -2,15 +2,19 @@
 
 Average4K uses OpenGL GLSL to display shaders.
 
+Average4K Shader Header (add in during runtime to every shader, so you can call these in your shader code if you want):
+```glsl
+// Avg4K Header
+uniform float iTime; // Current time in the song (ms)
+uniform float iBpm; // Current bpm in the song
+uniform float iBeat; // Current beat in the song
+```
+
 Please use these templates.
 
 Template Vert Shader:
 
 ```glsl
-// by default these get optimized out, but they're here for you :)
-uniform float iTime;
-uniform float iBpm;
-uniform float iBeat;
 in vec2 v_position;
 in vec2 v_uv;
 in vec4 v_colour;
@@ -29,10 +33,6 @@ void main()
 Template Frag Shader:
 
 ```glsl
-// by default these get optimized out, but they're here for you :)
-uniform float iTime;
-uniform float iBpm;
-uniform float iBeat;
 uniform sampler2D u_texture;
 in vec2 f_uv;
 in vec4 f_colour;

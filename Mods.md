@@ -197,32 +197,39 @@ activateMod("stealthOpacityReceptors", 4, 2, "outCubic", 1, 0)
 
 Currently sprite paths (splines) are pretty buggy, and they will be fixed in the future.
 
-### pathAlpha
-
-Changes the opacity of the sprite path
-
-Example:
-```lua
--- Sets the Sprite Path's alpha to 1 on the start of the song
-activateMod("pathAlpha", 0, 0, "outCubic", 1)
-```
-
-### pathDensity
-
-Changes the density of the sprite path
-
-Example:
-```lua
--- Sets the Sprite Path's density to 1 on the start of the song
-activateMod("pathDensity", 0, 0, "outCubic", 1)
-```
+(No mods documented due to me not wanting people to use them rn lolol)
 
 ## Splines
 
 The sprite path is the visual part of splines (and yes splines are also buggy), but they are less buggy.
 
-Here is an in depth tutorial on them:
+### Spline Functions
 
-[splineTutorial](_media/splineTutorial.mp4 ':include :type=video controls width=35%')
+#### setSpline
+Sets a spline's movex and movey values (and a "beatsAway" value saying how far away the notes will hit the point)
 
-This video is taken from the main tutorial [here](https://www.youtube.com/watch?v=5EfC9jMnxh0&feature=youtu.be).
+| Argument | Type | Description |
+| --- | --- |----------- |
+| column | int | The column of the spline |
+| beatsAway | double | How many beats away from the receptors should the spline end at |
+| movex | int | The amount to offset from the receptors on the x axis |
+| movey | int | The amount to offset from the receptors on the y axis |
+
+This function returns nothing
+
+#### removeSpline
+Removes a spline based on the provided beatsAway
+
+| Argument | Type | Description |
+| --- | --- |----------- |
+| column | int | The column of the spline |
+| beatsAway | double | The identifier for the spline to be removed |
+
+This function returns nothing
+
+#### resetSplines
+Resets all splines to {movex:0,movey:0, beatsAway:0} and removes all custom ones.
+
+This function has no arguments
+
+This function returns nothing

@@ -455,3 +455,16 @@ A simple tween function
 | Return | Type | Description |
 | --- | --- |----------- |
 | value | float | The return value of lerp |
+
+## setShaderUniform
+
+Set a given shader's uniform value
+
+| Argument | Type | Description |
+| --- | --- |----------- |
+| shader | string | The shaders name |
+| uniform | string | The uniforms name |
+| value | float | The value to set the uniform to |
+
+
+This function returns nothing
